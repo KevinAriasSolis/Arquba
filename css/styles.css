@@ -264,16 +264,17 @@ header {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #f5f1e9; /* Beige claro cálido */
-  color: #5a4d3f; /* Marrón oscuro suave para el texto */
+  background-color: #f5f1e9;
+  color: #5a4d3f;
   font-family: Arial, sans-serif;
 }
 
 .social-media {
   display: flex;
-  justify-content: center; /* centra horizontalmente */
-  gap: 30px; /* espacio entre iconos */
+  justify-content: center;
+  gap: 30px;
   margin-bottom: 15px;
+  flex-wrap: wrap; /* permite que los iconos bajen a la siguiente línea en pantallas pequeñas */
 }
 
 .social-media a {
@@ -289,4 +290,16 @@ footer {
   width: 32px;
   height: 32px;
   display: block;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 480px) {
+  .social-media {
+    gap: 15px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
 }
