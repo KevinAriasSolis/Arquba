@@ -203,3 +203,61 @@ header {
 .about-text {
     flex: 1;  /* Asegura que el texto ocupe el mismo espacio que el carrusel */
 }
+/* --- Media Queries para Tablets --- */
+@media (max-width: 900px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .menu ul li {
+    width: 100%;
+  }
+
+  .founders {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .founders > div {
+    max-width: 100%;
+  }
+}
+
+/* --- Media Queries para Celulares --- */
+@media (max-width: 600px) {
+  .menu-container {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  .menu ul {
+    gap: 10px;
+  }
+
+  .about-section {
+    padding: 15px 10px;
+  }
+
+  .founders img {
+    max-width: 100%;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}@media (max-width: 600px) {
+  body {
+    background-color: #f0f8ff !important;
+  }
+}
