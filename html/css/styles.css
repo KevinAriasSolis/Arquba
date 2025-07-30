@@ -1,0 +1,205 @@
+/* Estilos originales del header */
+header {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    max-height: 80px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #007bff;
+}
+
+/* Estilos para la sección "Sobre Nosotros" y el carrusel */
+.about-section {
+    display: flex;
+    flex-direction: column;  /* Apilar los elementos verticalmente */
+    gap: 20px;  /* Espacio entre los divs */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo del carrusel sin cambios */
+.carousel {
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+/* Estilo para los divs .about-us debajo del carrusel */
+.about-us {
+    display: block;  /* Mantener el bloque como estaba */
+    width: 100%;
+    margin-bottom: 40px;  /* Espacio entre las secciones */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los textos dentro de .about-text */
+.about-text {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los fundadores sin alterar el carrusel */
+.founders {
+    display: flex;
+    flex-direction: column;  /* Apila los elementos verticalmente */
+    align-items: center;     /* Centra el contenido dentro de cada caja */
+    gap: 20px;               /* Espacio entre el texto y la imagen */
+}
+
+.founders img {
+    width: 100%;
+    max-width: 250px;  /* Tamaño máximo de las imágenes */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover; /* Asegura que la imagen se recorte bien */
+}
+
+.founders p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Aseguramos que la sección "Sobre Nosotros" y el carrusel estén alineados horizontalmente */
+.about-section {
+    display: flex;
+    gap: 20px;  /* Espacio entre el carrusel y el texto */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo del carrusel sin cambios */
+.carousel {
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+/* Estilo para la sección "Sobre Nosotros" */
+.about-us {
+    display: flex;
+    flex-direction: column;  /* Los elementos dentro de "Sobre Nosotros" se apilan verticalmente */
+    flex: 1;  /* Toma el espacio restante disponible */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el texto dentro de "Sobre Nosotros" */
+.about-text {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Asegurar que el contenido de "Sobre Nosotros" se mantenga bien alineado */
+.about-text {
+    flex: 1;  /* Asegura que el texto ocupe el mismo espacio que el carrusel */
+}
